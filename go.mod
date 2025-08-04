@@ -1,4 +1,4 @@
-module github.com/libp2p/go-libp2p-pubsub
+module github.com/MultiverseChronicles/go-libp2p-pubsub
 
 go 1.23
 
@@ -7,7 +7,7 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/ipfs/go-log/v2 v2.5.1
 	github.com/libp2p/go-buffer-pool v0.1.0
-	github.com/libp2p/go-libp2p v0.39.1
+	github.com/MultiverseChronicles/go-libp2p
 	github.com/libp2p/go-libp2p-testing v0.12.0
 	github.com/libp2p/go-msgio v0.3.0
 	github.com/multiformats/go-multiaddr v0.14.0
