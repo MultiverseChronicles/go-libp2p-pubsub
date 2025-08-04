@@ -10,14 +10,14 @@ import (
 	"testing"
 	"time"
 
-	pool "github.com/libp2p/go-buffer-pool"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-msgio"
+	pool "github.com/MultiverseChronicles/go-buffer-pool"
+	"github.com/MultiverseChronicles/go-libp2p/core/host"
+	"github.com/MultiverseChronicles/go-libp2p/core/network"
+	"github.com/MultiverseChronicles/go-libp2p/core/peer"
+	"github.com/MultiverseChronicles/go-msgio"
 	"github.com/multiformats/go-varint"
 
-	pb "github.com/libp2p/go-libp2p-pubsub/pb"
+	pb "github.com/MultiverseChronicles/go-libp2p-pubsub/pb"
 )
 
 var rng *concurrentRNG

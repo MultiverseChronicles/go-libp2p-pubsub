@@ -4,7 +4,7 @@ import (
 	"iter"
 	"sync"
 
-	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/MultiverseChronicles/go-libp2p/core/peer"
 )
 
 // MessageBatch allows a user to batch related messages and then publish them at

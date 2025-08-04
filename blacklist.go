@@ -3,9 +3,9 @@ package pubsub
 import (
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/MultiverseChronicles/go-libp2p/core/peer"
 
-	"github.com/libp2p/go-libp2p-pubsub/timecache"
+	"github.com/MultiverseChronicles/go-libp2p-pubsub/timecache"
 )
 
 // Blacklist is an interface for peer blacklisting.

@@ -6,6 +6,6 @@
     },
     "workingGroup": {
       "name": "libp2p",
-      "entryPoint": "https://github.com/libp2p/libp2p"
+      "entryPoint": "https://github.com/MultiverseChronicles/libp2p"
     }
 }

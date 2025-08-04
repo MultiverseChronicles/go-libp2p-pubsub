@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/p2p/protocol/identify"
+	"github.com/MultiverseChronicles/go-libp2p/p2p/protocol/identify"
 )
 
 func TestNotifyPeerProtocolsUpdated(t *testing.T) {

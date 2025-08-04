@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
+	"github.com/MultiverseChronicles/go-libp2p"
+	"github.com/MultiverseChronicles/go-libp2p/core/host"
+	"github.com/MultiverseChronicles/go-libp2p/core/network"
 )
 
 func getDefaultHosts(t *testing.T, n int) []host.Host {
@@ -25,7 +25,7 @@ func getDefaultHosts(t *testing.T, n int) []host.Host {
 	return out
 }
 
-// See https://github.com/libp2p/go-libp2p-pubsub/issues/426
+// See https://github.com/MultiverseChronicles/go-libp2p-pubsub/issues/426
 func TestPubSubRemovesBlacklistedPeer(t *testing.T) {
 	ctx, cancel := context.WithCancel(context.Background())
 

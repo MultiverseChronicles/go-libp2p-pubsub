@@ -7,14 +7,14 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
-	pool "github.com/libp2p/go-buffer-pool"
+	pool "github.com/MultiverseChronicles/go-buffer-pool"
 	"github.com/multiformats/go-varint"
 
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-msgio"
+	"github.com/MultiverseChronicles/go-libp2p/core/network"
+	"github.com/MultiverseChronicles/go-libp2p/core/peer"
+	"github.com/MultiverseChronicles/go-msgio"
 
-	pb "github.com/libp2p/go-libp2p-pubsub/pb"
+	pb "github.com/MultiverseChronicles/go-libp2p-pubsub/pb"
 )
 
 // get the initial RPC containing all of our subscriptions to send to new peers

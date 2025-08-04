@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"sync"
 
-	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/MultiverseChronicles/go-libp2p/core/peer"
 )
 
 // PeerMetadataStore is an interface for storing and retrieving per peer metadata
@@ -25,7 +25,7 @@ type PeerMetadataStore interface {
 // It requires that pubsub is instantiated with a strict message signing policy and that seqnos
 // are not disabled, ie it doesn't support anonymous mode.
 //
-// Warning: See https://github.com/libp2p/rust-libp2p/issues/3453
+// Warning: See https://github.com/MultiverseChronicles/rust-libp2p/issues/3453
 // TL;DR: rust is currently violating the spec by issuing a random seqno, which creates an
 // interoperability hazard. We expect this issue to be addressed in the not so distant future,
 // but keep this in mind if you are in a mixed environment with (older) rust nodes.

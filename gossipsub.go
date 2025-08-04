@@ -10,16 +10,16 @@ import (
 	"sort"
 	"time"
 
-	pb "github.com/libp2p/go-libp2p-pubsub/pb"
+	pb "github.com/MultiverseChronicles/go-libp2p-pubsub/pb"
 
-	"github.com/libp2p/go-libp2p/core/event"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/core/protocol"
-	"github.com/libp2p/go-libp2p/core/record"
-	"github.com/libp2p/go-libp2p/p2p/host/peerstore/pstoremem"
+	"github.com/MultiverseChronicles/go-libp2p/core/event"
+	"github.com/MultiverseChronicles/go-libp2p/core/host"
+	"github.com/MultiverseChronicles/go-libp2p/core/network"
+	"github.com/MultiverseChronicles/go-libp2p/core/peer"
+	"github.com/MultiverseChronicles/go-libp2p/core/peerstore"
+	"github.com/MultiverseChronicles/go-libp2p/core/protocol"
+	"github.com/MultiverseChronicles/go-libp2p/core/record"
+	"github.com/MultiverseChronicles/go-libp2p/p2p/host/peerstore/pstoremem"
 
 	"go.uber.org/zap/zapcore"
 )
@@ -32,12 +32,12 @@ const (
 	// GossipSubID_v11 is the protocol ID for version 1.1.0 of the GossipSub protocol.
 	// It is advertised along with GossipSubID_v12 for backwards compatibility.
 	// See the spec for details about how v1.1.0 compares to v1.0.0:
-	// https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md
+	// https://github.com/MultiverseChronicles/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md
 	GossipSubID_v11 = protocol.ID("/meshsub/1.1.0")
 
 	// GossipSubID_v12 is the protocol ID for version 1.2.0 of the GossipSub protocol.
 	// See the spec for details about how v1.2.0 compares to v1.1.0:
-	// https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.2.md
+	// https://github.com/MultiverseChronicles/specs/blob/master/pubsub/gossipsub/gossipsub-v1.2.md
 	GossipSubID_v12 = protocol.ID("/meshsub/1.2.0")
 )
 
@@ -200,7 +200,7 @@ type GossipSubParams struct {
 	// OpportunisticGraftTicks is the number of heartbeat ticks for attempting to improve the mesh
 	// with opportunistic grafting. Every OpportunisticGraftTicks we will attempt to select some
 	// high-scoring mesh peers to replace lower-scoring ones, if the median score of our mesh peers falls
-	// below a threshold (see https://godoc.org/github.com/libp2p/go-libp2p-pubsub#PeerScoreThresholds).
+	// below a threshold (see https://godoc.org/github.com/MultiverseChronicles/go-libp2p-pubsub#PeerScoreThresholds).
 	OpportunisticGraftTicks uint64
 
 	// OpportunisticGraftPeers is the number of peers to opportunistically graft.
@@ -1748,7 +1748,7 @@ func (gs *GossipSubRouter) clearBackoff() {
 	for topic, backoff := range gs.backoff {
 		for p, expire := range backoff {
 			// add some slack time to the expiration
-			// https://github.com/libp2p/specs/pull/289
+			// https://github.com/MultiverseChronicles/specs/pull/289
 			if expire.Add(2 * GossipSubHeartbeatInterval).Before(now) {
 				delete(backoff, p)
 			}
